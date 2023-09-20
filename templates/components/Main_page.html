@@ -1,0 +1,271 @@
+{% extends 'default/index.html' %}
+{% load static %}
+{% block content %}
+
+
+<style>
+  .first_silde:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .first_silde:nth-child(1) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/1.webp' %}"); 
+  }
+
+  .first_silde:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .first_silde:nth-child(2) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/2.webp' %}");
+  }
+  
+  .first_silde:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .first_silde:nth-child(3) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/3.webp' %}");
+  }
+  
+  .first_silde:nth-child(4) {
+    animation-delay: 15s;
+  }
+  
+  .first_silde:nth-child(4) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/4.webp' %}");
+  }
+
+  .first_silde:nth-child(5) {
+    animation-delay: 20s;
+  }
+  
+  .first_silde:nth-child(5) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/5.webp' %}");
+  }
+
+  .first_silde:nth-child(6) {
+    animation-delay: 25s;
+  }
+  
+  .first_silde:nth-child(6) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/6.webp' %}");
+  }
+  
+
+
+
+
+
+   .sec_silde:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .sec_silde:nth-child(1) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/7.webp' %}");
+  }
+  .sec_silde:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .sec_silde:nth-child(2) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/8.webp' %}");
+  }
+  
+  .sec_silde:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .sec_silde:nth-child(3) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/9.webp' %}");
+  }
+  
+  .sec_silde:nth-child(4) {
+    animation-delay: 15s;
+  }
+  
+  .sec_silde:nth-child(4) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/10.webp' %}");
+  }
+  .sec_silde:nth-child(5) {
+    animation-delay: 20s;
+  }
+  
+  .sec_silde:nth-child(5) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/11.webp' %}");
+  }
+
+  .sec_silde:nth-child(6) {
+    animation-delay: 25s;
+  }
+  
+  .sec_silde:nth-child(6) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/12.webp' %}");
+  }
+
+  
+
+
+
+  
+  .third_slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .third_slide:nth-child(1) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/13.webp' %}"); 
+  }
+  .third_slide:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .third_slide:nth-child(2) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/14.webp' %}");
+  }
+  
+  .third_slide:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .third_slide:nth-child(3) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/15.webp' %}");
+  }
+  
+  .third_slide:nth-child(4) {
+    animation-delay: 15s;
+  }
+  
+  .third_slide:nth-child(4) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/16.webp' %}");
+  }
+  .third_slide:nth-child(5) {
+    animation-delay: 20s;
+  }
+  
+  .third_slide:nth-child(5) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/17.webp' %}");
+  }
+
+  .third_slide:nth-child(6) {
+    animation-delay: 25s;
+  }
+  
+  .third_slide:nth-child(6) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/18.webp' %}");
+  }
+
+
+  
+  .fourth_slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .fourth_slide:nth-child(1) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/19.webp' %}"); 
+  }
+  .fourth_slide:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .fourth_slide:nth-child(2) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/20.webp' %}");
+  }
+  
+  .fourth_slide:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .fourth_slide:nth-child(3) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/21.webp' %}");
+  }
+  
+  .fourth_slide:nth-child(4) {
+    animation-delay: 15s;
+  }
+  
+  .fourth_slide:nth-child(4) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/22.webp' %}");
+  }
+  .fourth_slide:nth-child(5) {
+    animation-delay: 20s;
+  }
+  
+  .fourth_slide:nth-child(5) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/23.webp' %}");
+  }
+
+  .fourth_slide:nth-child(6) {
+    animation-delay: 25s;
+  }
+  
+  .fourth_slide:nth-child(6) .untitled__slideBg {
+    background-image: url("{% static 'images/patrons/24.webp' %}");
+  }
+</style>
+  <!-- Content -->
+  <div class="Common_content" style="position: relative; z-index: 1; height: 545px;background-color: white;">
+    <!-- Include Image Slideshow -->
+    {% include 'default/dashboard_slideshow.html' %}
+
+    {% include 'default/current_vacancies.html' %}
+
+    <!-- Our Services -->
+    <h2 class="display_f padding_d margin_d justify_c header_font">Services</h2>
+    <div class="row_1 display_f">
+      <div class="normal-div-border_1 flex_c font_family_R margin_d display_f" data-aos="flip-left" style="height: 370px;">
+        <div class="hovicon effect-8 position_a align_c justify_c display_f" style="margin-left: -25px;">
+          <img src="{% static 'images/service1.png' %}" alt="data integration"  style="width: 100%; height: 100%; border-radius: 100px;">
+
+        </div>
+
+        <div class="serv_title">
+          <p>Data Management</p>
+        </div>
+
+        <div class="sec_text">
+          <p></p>
+        </div>
+
+        <div class="description">
+          <p>Welcome to IVN Technology Solutions, your trusted partner in data management solutions.
+            We understand that
+            in
+            today's data-driven landscape, efficient data management is not just essential—it's a strategic advantage.
+            Our
+            expertise lies in transforming your data into a valuable asset, driving better decision-making and improved
+            operational efficiency.</p>
+        </div>
+      </div>
+
+      <div class="normal-div-border_1 flex_c font_family_R margin_d display_f" data-aos="flip-left" style="height: 370px;">
+        <div class="hovicon effect-8 position_a align_c justify_c display_f" style="margin-left: -25px;">
+          <img src="{% static 'images/data integration.png' %}" alt="data integration"  style="width: 100%; height: 100%; border-radius: 100px;">
+        </div>
+
+        <div class="serv_title">
+          <p>Data Integration Services</p>
+        </div>
+
+        <div class="sec_text">
+          <p></p>
+        </div>
+
+        <div class="description">
+          <p>Welcome to IVN Technology Solutions, your go-to source for advanced data migration technologies. We understand that data transitions are critical moments for your business, and we're here to make them seamless and efficient. Our expertise lies in employing state-of-the-art technologies to ensure your data moves swiftly and securely, minimizing disruptions and maximizing accuracy.!</p>
+        </div>
+      </div>
+      <div class="normal-div-border_1 flex_c font_family_R margin_d display_f" data-aos="flip-left" style="height: 370px;" >
+        <div class="hovicon effect-8 position_a align_c justify_c display_f" style="margin-left: -25px;">
+          <img src="{% static 'images/data visualization.jpg' %}" alt="data integration"  style="width: 100%; height: 100%; border-radius: 100px;">
+        </div>
+
+        <div class="serv_title">
+          <p>Data Visualization and Insights</p>
+        </div>
+        <div class="sec_text">
+          <p></p>
+        </div>
+        <div class="description">
+          <p>Welcome to IVN Technology Solutions, your gateway to cutting-edge Data Visualization and Business Intelligence (BI) Dashboard technologies. We specialize in leveraging the power of technology to transform data into meaningful visual representations, providing a clear and concise view of your business landscape.</p>
+        </div>
+      </div>
+    </div>
+
+  <div style="margin-top: 80px;"></div>
+{% endblock %}

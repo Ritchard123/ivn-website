@@ -1,0 +1,314 @@
+
+
+
+/******** General CSS *******/
+.display_f {
+	display: flex;
+}
+
+.display_b {
+	display: block;
+}
+
+.justify_c {
+	justify-content: center;
+}
+
+.justify_e {
+	justify-content: flex-end;
+}
+
+.justify_sa {
+	justify-content: space-around;
+}
+
+.justify_sb {
+	justify-content: space-between;
+}
+
+.justify_se {
+	justify-content: space-evenly;
+}
+
+.align_c {
+	align-items: center;
+}
+
+.padding_d {
+	padding: 0;
+}
+
+.margin_d {
+	margin: 0;
+}
+
+.position_r {
+	position: relative;
+}
+
+.position_f {
+	position: fixed;
+}
+
+.position_a {
+	position: absolute;
+}
+
+.flex_c {
+	flex-direction: column;
+}
+
+.decoration_none {
+	text-decoration: none;
+}
+
+.display_i {
+	display: inline;
+}
+
+.font_family_R {
+	font-family: 'Roboto';
+}
+
+.text_align_c {
+	text-align: center;
+}
+.text_align_j{
+	text-align: justify;
+}
+
+
+/******** General CSS END *******/
+
+
+/*Top Navigation Menu*/
+.header {
+	background-image: linear-gradient(to bottom, #01a7cc, #014069);
+	height: var(--top_nav_height);
+	z-index: var(--top_nav_index);
+	width: 100%;
+	top: 0;
+}
+
+.top_nav_list {
+	height: 100%;
+}
+
+.top_nav_list {
+	height: 100%;
+}
+
+.top_nav_list li a {
+	color: white;
+	text-decoration: none;
+}
+
+.top_nav_list_items {
+	margin: 15px;
+	padding-bottom: 20px;
+}
+
+
+/*Side Navigatio Menu*/
+.sidebar {
+	width: var(--side_nav_width);
+	height: var(--side_nav_height);
+	background-image: linear-gradient(to right, #01a7cc, #00759c);
+	color: white;
+	top: 200px;
+	left: 0;
+	border-radius: 0px 6px 6px 0px;
+	transition: width 0.3s;
+	font-size: 24px;
+	z-index: var(--side_nav_index);
+}
+
+.side_nav_element {
+	display: none !important;
+	cursor: pointer;
+	font-size: 24px;
+	color: white;
+}
+
+.sidebar:hover {
+	width: var(--side_nav_width_h);
+}
+
+.sidebar:hover .side_nav_element {
+	display: block !important;
+}
+
+.side_nav_element:hover {
+	color: #dfab02;
+}
+
+
+
+/* RASA Logo Design CSS Start */
+
+.bottom_layer {
+	right: 20px;
+	bottom: 28px;
+}
+
+.cont {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	border-radius: 5px;
+}
+
+
+
+.card_logo {
+	background: #191c29;
+	width: var(--card-width);
+	height: var(--card-height);
+	padding: 5px 2px 5px 4px;
+	border-radius: 6px;
+	font-size: 1.4em;
+	cursor: pointer;
+	font-family: serif;
+	z-index: 10;
+}
+
+.card-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.3rem;
+	color: white;
+	height: 2rem;
+	border: none;
+	border-top: 1px solid;
+}
+
+.card-logo p {
+	font-size: 10px;
+}
+
+
+.card_logo::before {
+	content: "";
+	width: 104%;
+	height: 102%;
+	border-radius: 5px;
+	background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+	position: absolute;
+	z-index: -1;
+	top: -0.9%;
+	left: -1.5%;
+	right: -2%;
+	animation: spin 2.5s linear infinite;
+}
+
+.card_logo::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 1%;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+	opacity: 1;
+	transition: opacity .5s;
+	animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		--rotate: 0deg;
+	}
+
+	100% {
+		--rotate: 360deg;
+	}
+}
+
+/* Dot Indicatoers  CSS Start*/
+.dot_content {
+	width: 100%;
+	top: 35px;
+  }
+/* Dot Indicatoers  CSS END*/
+
+
+
+/* Footer CSS START */
+.footer {
+	width: 100%;
+	background-color: #00759c;
+	padding: 5px 0;
+	height: 255px;
+	position: absolute;
+  }
+  .footer_content {
+	height: 180px;
+	padding: 10px 10px;
+	margin: 7px;
+  }
+  
+  .address_content {
+	padding: 10px 20px;
+	text-align: left;
+	width: 21%;
+	color: white;
+  } 
+  .address_content p{
+	margin: 7px;
+  }
+  
+  .contact_content {
+	padding: 10px 20px;
+	width: 16%;
+	color: white;
+  }
+  
+  .contact_content p {
+	margin: 7px;
+  }
+  
+  
+  .govt {
+	text-align: justify;
+	color: white;
+	padding: 10px 20px;
+	width: 18%;
+	font-size: 15px;
+
+  }
+  
+  .govt p{
+	margin: 7px;
+  }
+  
+  .Map {
+	padding: 10px 20px;
+	color: white;
+	width: 30%;
+  }
+  
+  .Work_days {
+	width: 15%;
+	margin-top: 25px;
+	color: white;
+  }
+  .Work_days p{
+	margin: 7px;
+  }
+
+  
+.creator {
+	font-weight: bold;
+	color: white;
+	height: 35px;
+	background-color: #014069;
+  
+  }
+  /* Footer CSS END */
+  

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IVN Technology Solutions</title>
+	<link rel="stylesheet" href="{% static 'css/templates.css'%}">
+	<link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+	<link rel="stylesheet" href="{% static 'css/config.css'%}">
+  <link rel="stylesheet" href="{% static 'css/style_text_gold.css'%}">
+  <link rel="stylesheet" type="text/css" href="{%  static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{%  static 'css/Whats-NEW.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+  <link rel="stylesheet" type="text/css" href="{%  static 'css/about_.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet"> -->
+
+</head>
+<style type="text/css">
+    @font-face {
+      font-family: 'Domine';
+      src:  url("{% static 'fonts/Domine-Regular.ttf'%}") format('truetype');
+    }
+    @font-face {
+      font-family: 'Belgrano';
+      src:  url("{% static 'fonts/Belgrano-Regular.ttf'%}") format('truetype');
+    }
+    @font-face {
+      font-family: 'Langar';
+      src:  url("{% static 'fonts/Langar-Regular.ttf'%}") format('truetype');
+    }
+    @font-face {
+      font-family: 'Sansita';
+      src:  url("{% static 'fonts/Sansita-Regular.ttf'%}") format('truetype');
+    }
+    
+
+</style>
+
+<body>
+	
+    <!-- Include Header -->
+    {% include "components/top_nav.html" %}
+    <!-- Include Side Navigation Menu -->
+    {% include "components/side_nav.html" %}
+
+    {% block content %}
+
+        <!-- Map the contents -->
+
+    {% endblock %}
+
+    <!-- Include Header -->
+    {% include "components/footer.html" %}
+
+</body>
+</html>
+
+<script src="{% static 'local/js/jquery/jquery.min.js'%}"></script>
+<script src="{% static 'local/js/jquery/Jquery-ui.js'%}"></script>
+<script src="{% static 'local/js/anime/anime.min.js'%}"></script>
+<script src="{% static 'local/js/index_page.js'%}"></script>
+<script src="{% static 'local/js/raindrops/raindrop.js'%}"></script>
+<script src="{% static 'local/js/aos.js'%}"></script>
+<script src="{% static 'local/js/current-vacancies.js'%}"></script>
+
+<script> jQuery('#waterdrop').raindrops({color:'#00759c', density: 0.1, frequency: 20});</script>
+
+<!-- AOS Animation -->
+<script>
+    AOS.init();
+</script>
+<!-- Footer_waterdrop end-->

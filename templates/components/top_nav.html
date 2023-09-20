@@ -1,0 +1,48 @@
+{% load static %}
+
+<nav class="header position_f align_c display_f font_family_R">
+    <div style="width: 15%">
+        <img src="{% static 'images/ivn_logo.png' %}" alt="" class="main_logo">
+    </div>
+    <div style="width: 70%;height: 100%;">  
+        <ul class="top_nav_list display_f align_c">  
+            <li class=" top_nav_list_items display_f align_c">
+                <a href="{% url 'Main_page' %}" class="top_nav_list_items_element">
+                    <i class="fa fa-home"></i>Home</a>
+            </li>
+            <li class=" top_nav_list_items display_f align_c justify_c">
+                <a href="{% url 'about_us' %}" class="top_nav_list_items_element">
+                    <i class="fa fa-user"></i>About Us</a>
+            </li>
+            <li class=" top_nav_list_items display_f align_c justify_c">
+                <a href="{% url 'services' %}" class="top_nav_list_items_element">
+                    <i class="fa fa-cog"></i>Services</a>
+            </li>
+            <li class="dropdown top_nav_list_items display_f align_c justify_c " style="padding-top: 15px;">
+                <a href="javascript:void(0);" class="top_nav_list_items_element" style="padding-bottom: 15px;"><i class="fa fa-address-card nav_icon"></i>Solutions <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="{% url 'Banking' %}">Banking</a>
+                    <a href="{% url 'Healthcare' %}">Health Care</a>
+                    <a href="{% url 'Retail' %}">Retail</a>
+                    <a href="{% url 'Insurance' %}">Insurance</a>
+                    <a href="{% url 'Construction' %}">Construction</a>
+                    <a href="{% url 'Hr_management' %}">HR Management</a>
+                </div>
+            </li>
+            <li class=" top_nav_list_items display_f align_c justify_c">
+                <a href="{% url 'training' %}" class="top_nav_list_items_element">
+                    <i class="fa fa-wrench"></i>Training</a>
+            </li>
+            <li class=" top_nav_list_items display_f align_c justify_c">
+                <a href="{% url 'project' %}" class="top_nav_list_items_element">
+                    <i class="fa fa-hourglass-end"></i>Projects</a>
+            </li>
+            <li class=" top_nav_list_items display_f align_c justify_c">
+                <a href="{% url 'contact' %}" class="top_nav_list_items_element">
+                    <i class="fa fa-comments"></i>Contact Us</a>
+            </li>
+
+        </ul>
+    </div>
+    
+</nav>

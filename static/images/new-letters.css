@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to next line if needed */
+    justify-content: center;
+    max-width: 1200px;
+    /* Set a maximum width for the container */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(182, 30, 30, 0.637);
+    padding: 12px;
+    margin: 6px;
+    width: 300px;
+    height: 500px;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    /* Set the max height for the image */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.btn-know-more {
+    margin-top: 10px;
+}
+
+.know-more {
+    background-color: rgba(182, 30, 30, 0.637);
+}
+
+.div2-BIT-campus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(236, 219, 219, 0.1);
+    width: 300px;
+}

@@ -1,0 +1,18 @@
+:root {
+	
+	/*Global Config*/
+
+
+	/*Top Navigation Menu*/
+	--top_nav_height:  70px;
+	--top_nav_index : 4;
+
+	/*Side Navigation Menu*/
+	--side_nav_height:  35%;
+	--side_nav_width: 10px;
+	--side_nav_width_h: 50px;
+	--side_nav_index:5;
+
+	--bg_water:white;
+
+}

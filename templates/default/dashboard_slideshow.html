@@ -1,0 +1,14 @@
+{% load static %}
+<div class="Background_images">
+            <div class="dot_content position_a display_f justify_c" style="z-index: 2;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            <img src="{% static 'images/slide_show/bg1.jpg' %}" class="mySlides">
+            <img src="{% static 'images/slide_show/bg2.jpg' %}" class="mySlides">
+            <img src="{% static 'images/slide_show/bg3.jpg' %}" class="mySlides">
+            <img src="{% static 'images/slide_show/bg4.jpg' %}" class="mySlides">         
+</div>

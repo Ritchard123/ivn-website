@@ -1,0 +1,300 @@
+/******** General CSS *******/
+.display_f {
+	display: flex;
+}
+
+.display_b {
+	display: block;
+}
+
+.justify_c {
+	justify-content: center;
+}
+
+.justify_e {
+	justify-content: flex-end;
+}
+
+.justify_sa {
+	justify-content: space-around;
+}
+
+.justify_sb {
+	justify-content: space-between;
+}
+
+.justify_se {
+	justify-content: space-evenly;
+}
+
+.align_c {
+	align-items: center;
+}
+
+.padding_d {
+	padding: 0;
+}
+
+.margin_d {
+	margin: 0;
+}
+
+.position_r {
+	position: relative;
+}
+
+.position_f {
+	position: fixed;
+}
+
+.position_a {
+	position: absolute;
+}
+
+.flex_c {
+	flex-direction: column;
+}
+
+.decoration_none {
+	text-decoration: none;
+}
+
+.display_i {
+	display: inline;
+}
+
+.font_family_R {
+	font-family: 'Roboto';
+}
+
+.text_align_c {
+	text-align: center;
+}
+.text_align_j{
+	text-align: justify;
+}
+.color_w{
+    color: white;
+}
+.padding_1px{
+    padding: 1px 0px;
+}
+.line_h{
+    line-height: 150%;
+}
+.font_n{
+    font-style: normal;
+}
+.font_b{
+    font-weight: bold;
+}
+.font_size{
+  font-size: 1.1rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/******** General CSS END *******/    
+    
+    .details_content {
+    width: 800px;
+    background-color: #120a43;
+    border-radius: 35px;
+    padding: 40px;
+    margin: 70px 0px 0px 35px;
+  }
+
+  .content_zone{
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 90vh;
+  }
+
+  .details_content_2{
+    width: 900px;
+    height: 530px;
+    background-color: #120a43;
+    border-radius: 35px;
+    position: relative;
+    top: 20px;
+    right: -20px;
+  }
+  .details_content_3{
+    width: 900px;
+    height: 230px;
+    background-color: #120a43;
+    border-radius: 35px;
+    position: relative;
+    top: 20px;
+    right: -20px;
+  }
+
+  .content_1{
+    top: 70px;
+    height: 345px;
+    background-color: #0d0038;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .ceo_title p {
+    font-weight: bold;
+    font-size: 25px;
+    width: fit-content;
+    color: white;
+    margin: 12px;
+    
+  
+  }
+
+  .heading_title{
+    color: #fb9d10;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  
+
+
+  .heading_title p{
+    margin: 0;
+  }
+
+  .bold_heading{
+    color: #d6e308;
+    font-weight: bold;
+  }
+  
+    
+  .Side_profile {
+    height: 400px;
+    background-color: #354e75;
+    right: 30px;
+    width: 350px;
+    top: 70px;
+    border-radius: 0px 0px 180px 180px;
+    z-index: 0;
+  }
+  
+  
+  .profile_circle {
+    height: 270px;
+    width: 270px;
+    z-index: 2;
+    background-color: #120a43;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 40px;
+    right: 42px;
+    border-radius: 150px 150px 150px 150px;
+  }
+  
+  
+  .profile_circle img {
+    height: 270px;
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    border-radius: 150px 150px 150px 150px;
+  
+  }
+  
+  .zone_div {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    z-index: 3;
+  }
+
+  .ocv_table{
+    color: white;
+    margin: 15px 0px 0px 0px;
+    border-collapse: collapse;
+
+  }
+  .ocv_table th, td{
+    padding: 12px;
+    text-align: left;
+  }
+  
+
+  
+  /* .detail_1 {
+    position: absolute;
+    left: 40px;
+    top: 70px;
+    width: 810px;
+
+  }
+  
+  .para{
+    width: fit-content;
+    position: absolute;
+    left: 40px;
+    top:140px;
+  }
+  
+  .para p{
+    color: #fffffe;
+    width: fit-content;
+    margin: 0;
+  }
+  
+  .bold_content p{
+    position: absolute; 
+    color:white; 
+    font-weight: bold;
+  }
+   */
+  
+  /* Profile animation */
+  .profile_circle:before,
+  .profile_circle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 1px 0px 39px 2px #00050c;
+    border-radius: 50%;
+  }
+  
+  
+  .profile_circle:before {
+    animation: ripple 2s linear infinite;
+  }
+  
+  .profile_circle:after {
+    animation: ripple 2s linear 1s infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+
+  .service_link{
+    font-weight: bold;
+    color: rgb(204, 91, 161);
+    font-size:  17px;
+  }
+  .service_link:hover{
+    color: blue;
+    font-size:  18px;
+  }

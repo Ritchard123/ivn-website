@@ -1,0 +1,162 @@
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+/******** General CSS *******/
+.display_f {
+	display: flex;
+}
+
+.display_b {
+	display: block;
+}
+
+.justify_c {
+	justify-content: center;
+}
+
+.justify_e {
+	justify-content: flex-end;
+}
+
+.justify_sa {
+	justify-content: space-around;
+}
+
+.justify_sb {
+	justify-content: space-between;
+}
+
+.justify_se {
+	justify-content: space-evenly;
+}
+
+.align_c {
+	align-items: center;
+}
+
+.padding_d {
+	padding: 0;
+}
+
+.margin_d {
+	margin: 0;
+}
+
+.position_r {
+	position: relative;
+}
+
+.position_f {
+	position: fixed;
+}
+
+.position_a {
+	position: absolute;
+}
+
+.flex_c {
+	flex-direction: column;
+}
+
+.decoration_none {
+	text-decoration: none;
+}
+
+.display_i {
+	display: inline;
+}
+
+.font_family_R {
+	font-family: 'Roboto';
+}
+
+.text_align_c {
+	text-align: center;
+}
+.text_align_j{
+	text-align: justify;
+}
+
+
+/******** General CSS END *******/
+
+.header{
+  
+	width: 100%;
+	height: var(--top_nav_height);
+	top: 0;
+}
+.brand{
+	width: 8%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 62%;
+}
+.search{
+	width: 30%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 26px 20px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 26px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content{
+  height: 40rem;
+  margin-top: 70px;
+}

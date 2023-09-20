@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: 'Rubik', sans-serif;
+  --font-serif: 'Cardo', serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+
+
+.country-content {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+  padding: 5%;
+}
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 1px 1px 20px 1px white;
+}
+.btn:hover {
+  background-color: #0d0d0d;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+.down_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 28%;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 1px 1px 20px 1px white;
+}
+.down_btn:hover {
+  background-color: #0d0d0d;
+}
+.down_btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+
+#down_info_msg_aus{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+
+#down_info_msg_can{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_china{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_dubai{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_ethiopia{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_india{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_japan{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_kuwait{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_lativa{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+
+#down_info_msg_lithuania{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_saudi{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+}
+#down_info_msg_singa{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 0px 2px 5px black;
+}
+
+.down_div_bar{
+  display: block;
+  height: 420px;
+  width: 255px;
+  background-color: #ffffff;
+  z-index: 2;
+  border-radius: 20px ; /* Adjusted value */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1), 
+              0px -4px 10px rgba(0, 0, 0, 0.1), 
+              4px 0px 10px rgba(0, 0, 0, 0.1), 
+              -4px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow on all sides */
+}
+
+.close-btn{
+  color: white;
+  background-color: red;
+  margin-left: 230px;
+}
